@@ -20,6 +20,7 @@ namespace FoodCourtUI.Views
         public HomePage()
         {
             InitializeComponent();
+            NavigationPage.SetHasNavigationBar(this, false);
             ProductsCollection = new ObservableCollection<PopularProduct>();
             CategoriesCollection = new ObservableCollection<Category>();
             GetPopularProducts();
