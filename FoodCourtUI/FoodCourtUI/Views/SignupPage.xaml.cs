@@ -17,6 +17,7 @@ namespace FoodCourtUI.Views
         public SignupPage()
         {
             InitializeComponent();
+            NavigationPage.SetHasNavigationBar(this, false);
         }
         private async void BtnSignUp_Clicked(object sender, EventArgs e)
         {
