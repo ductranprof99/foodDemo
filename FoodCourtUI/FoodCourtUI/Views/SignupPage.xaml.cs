@@ -27,7 +27,7 @@ namespace FoodCourtUI.Views
             }
             else if (!EntEmail.Text.Contains('@'))
             {
-                await DisplayAlert("Email", "Ditmemay email", "Cancel");
+                await DisplayAlert("Wrong type", "Email must contain character @", "OK");
             }
             else
             {
