@@ -24,6 +24,10 @@ namespace FoodCourtUI.Views
             {
                 await DisplayAlert("Password mismatch", "Please check your confirm password", "Cancel");
             }
+            else if (!EntEmail.Text.Contains('@'))
+            {
+                await DisplayAlert("Email", "Ditmemay email", "Cancel");
+            }
             else
             {
                 var response = await ApiService.RegisterUser(EntName.Text, EntEmail.Text, EntPassword.Text);
