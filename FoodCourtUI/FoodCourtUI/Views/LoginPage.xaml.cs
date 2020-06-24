@@ -16,6 +16,7 @@ namespace FoodCourtUI.Views
         public LoginPage()
         {
             InitializeComponent();
+            NavigationPage.SetHasNavigationBar(this, false);
         }
         private void TapBackArrow_Tapped(object sender, EventArgs e)
         {
